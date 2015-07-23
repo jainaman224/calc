@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculator</title>
+</head>
+<body>
+<link rel="stylesheet" type="text/css" href="/home/aman/html/calculator/calc/calculator.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+<input type="text" readonly class="form-control" id="d"></input>
+
+<div class="col-md-4"></div>
+<div class="col-md-3">
+<button type="submit" class="btn btn-success" value="1" onclick="v('1')">1</button>
+<button type="submit" class="btn btn-success" value="2" onclick="v('2')">2</button>
+<button type="submit" class="btn btn-success" value="3" onclick="v('3')">3</button><br>
+<button type="submit" class="btn btn-success" value="4" onclick="v('4')">4</button>
+<button type="submit" class="btn btn-success" value="5" onclick="v('5')">5</button>
+<button type="submit" class="btn btn-success" value="6" onclick="v('6')">6</button><br>
+<button type="submit" class="btn btn-success" value="7" onclick="v('7')">7</button>
+<button type="submit" class="btn btn-success" value="8" onclick="v('8')">8</button>
+<button type="submit" class="btn btn-success" value="9" onclick="v('9')">9</button><br>
+<button type="submit" class="btn btn-success" value="0" onclick="v('0')">0</button>
+<button type="submit" class="btn btn-success" value="." onclick="v('.')">.</button>
+</div>
+<div class="col-md-2">
+<button type="button" class="btn btn-danger" value="" onclick="c('')">ac</button><br>
+<button type="button" class="btn btn-primary" value="+" onclick="v('+')">+</button>
+<button type="button" class="btn btn-primary" value="-" onclick="v('-')">-</button><br>
+<button type="button" class="btn btn-primary" value="*" onclick="v('*')">x</button>
+<button type="button" class="btn btn-primary" value="/" onclick="v('/')">/</button><br>
+<button type="button" class="btn btn-primary" value="%" onclick="v('%')">%</button>
+<button type="button" class="btn btn-primary" value="=" onclick="e()">=</button><br>
+</div>
+<div class="col-md-4"></div>
+<style type="text/css">
+	.btn{
+		width: 40px;
+		text-align: center;
+	}
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/home/aman/html/calculator/calc/calc.js"></script>    
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>
