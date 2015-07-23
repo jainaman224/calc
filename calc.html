@@ -12,43 +12,63 @@
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 
-<input type="text" readonly class="form-control" id="d"></input>
+
 
 <div class="col-md-4"></div>
 <div class="col-md-3">
-<button type="submit" class="btn btn-success" value="1" onclick="v('1')">1</button>
-<button type="submit" class="btn btn-success" value="2" onclick="v('2')">2</button>
-<button type="submit" class="btn btn-success" value="3" onclick="v('3')">3</button><br>
-<button type="submit" class="btn btn-success" value="4" onclick="v('4')">4</button>
-<button type="submit" class="btn btn-success" value="5" onclick="v('5')">5</button>
-<button type="submit" class="btn btn-success" value="6" onclick="v('6')">6</button><br>
-<button type="submit" class="btn btn-success" value="7" onclick="v('7')">7</button>
-<button type="submit" class="btn btn-success" value="8" onclick="v('8')">8</button>
-<button type="submit" class="btn btn-success" value="9" onclick="v('9')">9</button><br>
-<button type="submit" class="btn btn-success" value="0" onclick="v('0')">0</button>
-<button type="submit" class="btn btn-success" value="." onclick="v('.')">.</button>
+<input type="text" readonly class="form-control" id="d"></input><br>
+<div class="col-md-3"></div>
+<div class="col-md-7">
+<button type="button" class="btn btn-success btn1" value="(" onclick="v('(', '(')">(</button>
+<button type="button" class="btn btn-success btn1" value=")" onclick="v(')', ')')">)</button>
+<button type="button" class="btn btn-success btn1" value="sin(" onclick="v('sin(', 'Math.sin(' )">sin</button><br>
+<button type="button" class="btn btn-success btn1" value="cos(" onclick="v('cos(', 'Math.cos(' )">cos</button>
+<button type="button" class="btn btn-success btn1" value="tan(" onclick="v('tan(', 'Math.tan(' )">tan</button>
+<button type="button" class="btn btn-success btn1" onclick="pi()">pi</button><br><br>
 </div>
-<div class="col-md-2">
-<button type="button" class="btn btn-danger" value="" onclick="c('')">ac</button>
-<button type="button" class="btn btn-danger" onclick="aman()">del</button><br>
-<button type="button" class="btn btn-primary" value="+" onclick="v('+')">+</button>
-<button type="button" class="btn btn-primary" value="-" onclick="v('-')">-</button><br>
-<button type="button" class="btn btn-primary" value="*" onclick="v('*')">x</button>
-<button type="button" class="btn btn-primary" value="/" onclick="v('/')">/</button><br>
-<button type="button" class="btn btn-primary" value="%" onclick="v('%')">%</button>
-<button type="button" class="btn btn-primary" value="=" onclick="e()">=</button><br>
+<div class="col-md-2"></div>
+<div class="col-md-7">
+<button type="button" class="btn btn-success btn2" value="1" onclick="v('1', '1')">1</button>
+<button type="button" class="btn btn-success btn2" value="2" onclick="v('2', '2')">2</button>
+<button type="button" class="btn btn-success btn2" value="3" onclick="v('3', '3')">3</button><br>
+<button type="button" class="btn btn-success btn2" value="4" onclick="v('4', '4')">4</button>
+<button type="button" class="btn btn-success btn2" value="5" onclick="v('5', '5')">5</button>
+<button type="button" class="btn btn-success btn2" value="6" onclick="v('6', '6')">6</button><br>
+<button type="button" class="btn btn-success btn2" value="7" onclick="v('7', '7')">7</button>
+<button type="button" class="btn btn-success btn2" value="8" onclick="v('8', '8')">8</button>
+<button type="button" class="btn btn-success btn2" value="9" onclick="v('9', '9')">9</button><br>
+<button type="button" class="btn btn-success btn2" value="0" onclick="v('0', '0')">0</button>
+<button type="button" class="btn btn-success btn2" value="." onclick="v('.', '.')">.</button>
+<button type="button" class="btn btn-success btn2" value="cos(" onclick="v('e^(', 'Math.exp(' )">exp</button><br>
 </div>
-<div class="col-md-4"></div>
-<style type="text/css">
-	.btn{
-		width: 40px;
-		text-align: center;
-	}
-</style>
+<div class="col-md-5">
+<button type="button" class="btn btn-danger btn2" value="" onclick="c('')">ac</button>
+<button type="button" class="btn btn-danger btn2" onclick="aman()">del</button><br>
+<button type="button" class="btn btn-primary btn2" value="+" onclick="v('+', '+')">+</button>
+<button type="button" class="btn btn-primary btn2" value="-" onclick="v('-', '-')">-</button><br>
+<button type="button" class="btn btn-primary btn2" value="*" onclick="v('x', '*')">x</button>
+<button type="button" class="btn btn-primary btn2" value="/" onclick="v('%', '/')">/</button><br>
+<button type="button" class="btn btn-primary btn2" value="%" onclick="v('rem', '%')">%</button>
+<button type="button" class="btn btn-primary btn2" value="=" onclick="e()">=</button><br>
+</div>
+</div>
+<div class="col-md-5"></div>
+<input type="text" readonly id="e"></input>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="calc.js"></script>    
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<style type="text/css">
+	.btn2{
+		width: 44px;
+		text-align: center;
+	}
+	.btn1{
+		width: 40px;
+		height: 34px;
+		text-align: center;
+	}
+</style>
 </body>
 </html>
