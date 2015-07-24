@@ -30,6 +30,11 @@ for (var j=0; j<=i; j+=1)
 document.getElementById("d").value+=str[j];
 document.getElementById("e").value+=str1[j];
 }
+else if (i==0){
+i-=1;
+document.getElementById("d").value="";
+document.getElementById("e").value="";
+}
 }
 
 function pi()
@@ -53,4 +58,4 @@ catch(e)
   i=0;
   c('Error');
 } 
-}  
+}
